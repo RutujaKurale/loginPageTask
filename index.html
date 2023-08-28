@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login to your account</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <div class="data">
+        <div class="container_img">
+            <img src="image.jpg" alt="">
+        </div>
+        <div class="container_form">
+            <form id="login_form" action="welcome.html" post="method">
+                <id="formss">
+                    <p>Welcome back</p>
+                    <h2>Login to your account</h2><br>
+                    <label for="Email">Email</label></br>
+                    <input type="email" id="email" name="email" placeholder="John.snow@gmail.com">
+                    <p id="emailError"></p>
+                    
+                    <label for="Password">Password</label></br>
+                    <input type="password" id="password" name="password" placeholder="*********">
+                    <p id="passwordError"></p>
+
+                    <div class="msg">
+                        <div class="remember_div">
+                            <input type="radio">
+                            <p id="remember">Remember me</p>
+                        </div>
+                        <p id="forgot">Forgot password?</p>
+                    </div>
+                    
+                    <button id="login_button" type="Login now" onclick="validate()">Login Now</button>
+                    <br>
+                    <!-- <button id="google_button"><img src="icon.png" alt="google" id="google_img" height="35%" width="5%" 
+                            style="margin-right: 2px; justify-self: center;">Or sign-in with google</button> -->
+                            <button id="google">
+                                <div class="google_signIn">
+                                    <img id="google_img" src="icon.png">
+                                    <p id="google_txt">Or sign-in with google</p>
+                            </div></button>
+                    </form>
+
+
+                <script src="script.js"></script>
+                <p id="footer">Dont have an account? <a href="#" id="join_free_today"> Join free today</a></p>
+        </div>
+            
+
+    </div>
+    
+</body>
+
+</html>

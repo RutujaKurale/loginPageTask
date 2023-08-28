@@ -1,0 +1,267 @@
+*{
+    font-family: Roboto;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+}
+.data{
+    display: flex;
+}
+a{
+    text-decoration: none;
+}
+.container_img{
+    width: 50%;
+    height: 50%;
+    overflow: hidden;
+}
+img{
+    width: 70vw;
+    height: 100vh;
+}
+
+.container_form{
+    margin: 10%;
+    position: relative;
+    justify-content: center;
+    height: 100%;
+}
+
+.text{
+    font-size: 16px;
+    font-weight: 400;
+    color: #2D3748;
+}
+
+#loginText{
+    font-size: 30px;
+    font-weight: 700;
+    color: #1A202C;
+}
+
+#login_form{
+    margin-top: 10px;
+    height: 215px;
+    width: 350px;
+    align-self: center;
+}
+
+#email, #password{
+    width: 95%;
+    height: 40px;
+    /* top: 30px; */
+    border-radius: 5px;
+    color: black;
+    border: 0.2px solid #E8E8E8;
+    margin-top: 5px;
+    margin-bottom: 2px;
+    padding-left: 10px;
+
+}
+
+#emailError, #passwordError{
+    height: 10px;
+    display: block;
+    margin: 1px auto 15px auto;
+    color: rgb(202, 48, 48);
+}
+.form{
+    margin-top: 20%;
+    margin-bottom: 20;
+}
+
+.msg{
+    margin-bottom: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content:space-between;
+    flex-direction: row;
+}
+
+.remember_div{
+    display: flex;
+    justify-self: start;
+}
+
+#remember{
+    display: inline;
+    font-size: small;
+    font-weight: 400;
+    color: #2D3748;
+    padding-left: 5px;
+}
+
+#forgot{
+    display: inline;
+    margin-left: 50px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #2C5282;
+}
+#error{
+    color: rgb(221, 54, 54);
+    size: 12px;
+}
+#message {
+    display:none;
+    background: #f1f1f1;
+    color: #000;
+    position: relative;
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#google_button,
+#login_button {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    
+}
+
+#login_button {
+    background-color: #04c350;
+    color: white;
+    border: none;
+    font-size: medium;
+}
+
+#login_button:hover {
+    opacity: 0.8;
+}
+
+#google_button {
+    background-color: #404549;
+    color: white;
+    border: none;
+    font-size: medium;
+
+}
+
+#google_button:hover {
+    opacity: 0.8;
+}
+#submit {
+    color: white;
+    background: #04c35c;
+    width: calc(100% + 10px);
+    border: none;
+    font-size: 16px
+}
+
+.google-signin {
+    position: relative;
+    color: white;
+    background: #2d3748;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    line-height: 50px;
+    font-size: 16px;
+    text-align: center
+}
+
+.google-img {
+    align-items: center;
+    padding: 5px;
+    width: 20px;
+    height: 20px
+}
+#signin{
+    background: #04C35C;
+    width: 347px;
+    height: 50px;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#signin_txt{
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0em;
+    text-align: center;
+
+}
+#google{
+    background: #2D3748;
+    width: 347px;
+    height: 50px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.google_signIn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#google_txt{
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FFFFFF;
+    margin-left: 5px;
+}
+
+#google_img{
+    width: 20px;
+    height: 20px;
+    align-items: center;
+}
+
+#footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    margin-top: 50px;
+    bottom: 0%;
+    font-size: 16px;
+}
+
+@media (min-width: 230px) and (max-width: 600px){
+    img {
+        top: auto;
+        width: auto;
+        height: auto;
+    }
+    
+}
+@media (min-width: 230px) and (max-width: 600px){
+    .data {
+        display: flex;
+        flex-direction: column;
+        flex: 2;
+        align-items: center;
+        height: 100vh;
+    }
+
+    img {
+        top: auto;
+        width: auto;
+        height: auto;
+    }
+
+    .container_form {
+        position: relative;
+        /* padding: 60%; */
+        margin-left: 50%;
+        width: 80%;
+        align-items: center;
+    }
+
+    .footer {
+        bottom: 0%;
+        position: fixed;
+        margin-bottom: 2%;
+        text-align: center;
+    }
+}
